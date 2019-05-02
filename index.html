@@ -1,0 +1,119 @@
+
+<html>
+  <head>
+  <title>Audio</title>
+
+  <audio id="audio1" src="w.wav" ></audio>
+
+  <audio id="audio2" src="bur.wav" ></audio>
+
+  <audio id="audio3" src="ah.wav" ></audio>
+
+  <audio id="audio4" src="wa.wav" ></audio>
+
+  <audio id="audio5" src="Kiss.wav"></audio>
+
+
+  </head>
+
+<body>
+    <body style="background-color:#FFBF00;">
+
+      <h1 style="text-align:center; 
+      font-size: 300px; font-family: Overpass, sans-serif; font-weight:bold; 
+      color:#FFFFE0; position:relative; top: 400px;">Hello?</h1>
+     
+     <div id="imagecontainer" style="position:relative; top: -500px;">
+      <img src="monster1.png" onclick="togglePlay1()">
+      <img src="monster2.png" onclick="togglePlay2()">
+      <img src="monster3.png" onclick="togglePlay3()">
+      <img src="monster4.png" onclick="togglePlay4()">
+      <img src="monster5.png" onclick="togglePlay5()">
+    </div>
+     
+     
+     <script>
+       var audioOne = document.getElementById('audio1');
+       var audioOnePlaying = false;
+       var audioTwo = document.getElementById('audio2');
+       var audioTwoPlaying = false;
+       var audioThree = document.getElementById('audio3');
+       var audioThreePlaying = false;
+       var audioFour = document.getElementById('audio4');
+       var audioFourPlaying = false;
+       var audioFive = document.getElementById('audio5');
+       var audioFivePlaying = false;
+
+       function togglePlay1() {
+         if (audioOnePlaying) {
+           audioOne.pause();
+         } else {
+           audioOne.play();
+         }
+       }
+       audioOne.onplaying = function() {
+         audioOnePlaying = true;
+       }
+       audioOne.onpause = function() {
+         audioOnePlaying = false;
+       }
+
+       function togglePlay2() {
+         if (audioTwoPlaying) {
+           audioTwo.pause();
+         } else {
+           audioTwo.play();
+         }
+       }
+       audioTwo.onplaying = function() {
+         audioTwoPlaying = true;
+       }
+       audioTwo.onpause = function() {
+         audioTwoPlaying = false;
+       }
+
+       function togglePlay3() {
+         if (audioThreePlaying) {
+           audioThree.pause();
+         } else {
+           audioThree.play();
+         }
+       }
+       audioThree.onplaying = function() {
+         audioThreePlaying = true;
+       }
+       audioThree.onpause = function() {
+         audioThreePlaying = false;
+       }
+
+       function togglePlay4() {
+         if (audioFourPlaying) {
+           audioFour.pause();
+         } else {
+           audioFour.play();
+         }
+       }
+       audioFour.onplaying = function() {
+         audioFourPlaying = true;
+       }
+       audioFour.onpause = function() {
+         audioFourPlaying = false;
+       }
+
+       function togglePlay5() {
+         if (audioFivePlaying) {
+           audioFive.pause();
+         } else {
+           audioFive.play();
+         }
+       }
+       audioFive.onplaying = function() {
+         audioFivePlaying = true;
+       }
+       audioFive.onpause = function() {
+         audioFivePlaying = false;
+       }
+     </script>
+
+ </body>
+ <html>
